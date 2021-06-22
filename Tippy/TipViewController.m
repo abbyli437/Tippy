@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentageControl;
 @property (weak, nonatomic) IBOutlet UIView *labelsContainersView;
 
+@property bool isHidden;
+
 @end
 
 @implementation TipViewController
@@ -34,7 +36,10 @@
     if (self.billAmountField.text.length == 0) {
         [self hideLabels];
     }
-    
+    else if (self.isHidden){
+        [self showLabels];
+    }
+
     double tipPercentages[] = {0.15, 0.2, 0.25};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     
@@ -59,6 +64,26 @@
         self.labelsContainersView.frame = labelsFrame;
         
         self.labelsContainersView.alpha = 0;
+        
+        self.isHidden = true;
+    }];
+}
+
+- (void)showLabels {
+    [UIView animateWithDuration:0.5 animations:^{
+        self.labelsContainersView.alpha = 1;
+        
+        CGRect billFrame = self.billAmountField.frame;
+        billFrame.origin.y -= 200;
+        
+        self.billAmountField.frame = billFrame;
+        
+        CGRect labelsFrame = self.labelsContainersView.frame;
+        labelsFrame.origin.y -= 200;
+        
+        self.labelsContainersView.frame = labelsFrame;
+        
+        self.isHidden = false;
     }];
 }
 
