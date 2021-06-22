@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tip View Controller-->
+        <!--Tippy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TipViewController" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                             <outletCollection property="gestureRecognizers" destination="iTP-VQ-gbC" appends="YES" id="Vl9-Pp-VjB"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="h7U-Vj-hnr"/>
+                    <navigationItem key="navigationItem" title="Tippy" id="h7U-Vj-hnr"/>
                     <connections>
                         <outlet property="billAmountField" destination="KXm-nH-lUs" id="Gzh-9B-YXb"/>
                         <outlet property="labelsContainersView" destination="MYq-aP-jJy" id="Hoj-N7-wRT"/>
