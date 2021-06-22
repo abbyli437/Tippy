@@ -9,10 +9,11 @@
 
 @interface TipViewController ()
 @property (weak, nonatomic) IBOutlet
-    UITextField *billField;
+    UITextField *billAmountField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipPercentageControl;
+@property (weak, nonatomic) IBOutlet UIView *labelsContainersView;
 
 @end
 
@@ -30,15 +31,35 @@
 }
 
 - (IBAction)updateLabels:(id)sender {
+    if (self.billAmountField.text.length == 0) {
+        [self hideLabels];
+    }
+    
     double tipPercentages[] = {0.15, 0.2, 0.25};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     
-    double bill = [self.billField.text doubleValue];
+    double bill = [self.billAmountField.text doubleValue];
     double tip = bill * tipPercentage;
     double total = bill + tip;
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
     self.totalLabel.text = [NSString stringWithFormat:@"%.2f", total];
+}
+
+- (void)hideLabels {
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect billFrame = self.billAmountField.frame;
+        billFrame.origin.y += 200;
+        
+        self.billAmountField.frame = billFrame;
+        
+        CGRect labelsFrame = self.labelsContainersView.frame;
+        labelsFrame.origin.y += 200;
+        
+        self.labelsContainersView.frame = labelsFrame;
+        
+        self.labelsContainersView.alpha = 0;
+    }];
 }
 
 /*
