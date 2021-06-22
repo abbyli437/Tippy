@@ -52,6 +52,7 @@
 		88C4CAD826827218009A861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C4CAE4268286B9009A861F /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		88C4CAE5268286B9009A861F /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		88C4CAE72682A797009A861F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +113,7 @@
 				88C4CAE5268286B9009A861F /* TipViewController.m */,
 				88C4CAC026827218009A861F /* Info.plist */,
 				88C4CAC126827218009A861F /* main.m */,
+				88C4CAE72682A797009A861F /* README.md */,
 			);
 			path = Tippy;
 			sourceTree = "<group>";
