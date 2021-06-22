@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		88C4CAB126827216009A861F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CAB026827216009A861F /* AppDelegate.m */; };
 		88C4CAB426827216009A861F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CAB326827216009A861F /* SceneDelegate.m */; };
-		88C4CAB726827216009A861F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CAB626827216009A861F /* ViewController.m */; };
 		88C4CABA26827216009A861F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C4CAB826827216009A861F /* Main.storyboard */; };
 		88C4CABC26827218009A861F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C4CABB26827218009A861F /* Assets.xcassets */; };
-		88C4CABF26827218009A861F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C4CABD26827218009A861F /* LaunchScreen.storyboard */; };
 		88C4CAC226827218009A861F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CAC126827218009A861F /* main.m */; };
 		88C4CACC26827218009A861F /* TippyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CACB26827218009A861F /* TippyTests.m */; };
 		88C4CAD726827218009A861F /* TippyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CAD626827218009A861F /* TippyUITests.m */; };
+		88C4CAE6268286B9009A861F /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4CAE5268286B9009A861F /* TipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +40,8 @@
 		88C4CAB026827216009A861F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		88C4CAB226827216009A861F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		88C4CAB326827216009A861F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		88C4CAB526827216009A861F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88C4CAB626827216009A861F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88C4CAB926827216009A861F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88C4CABB26827218009A861F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		88C4CABE26827218009A861F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88C4CAC026827218009A861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C4CAC126827218009A861F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88C4CAC726827218009A861F /* TippyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +50,8 @@
 		88C4CAD226827218009A861F /* TippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C4CAD626827218009A861F /* TippyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TippyUITests.m; sourceTree = "<group>"; };
 		88C4CAD826827218009A861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C4CAE4268286B9009A861F /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		88C4CAE5268286B9009A861F /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +106,10 @@
 				88C4CAB026827216009A861F /* AppDelegate.m */,
 				88C4CAB226827216009A861F /* SceneDelegate.h */,
 				88C4CAB326827216009A861F /* SceneDelegate.m */,
-				88C4CAB526827216009A861F /* ViewController.h */,
-				88C4CAB626827216009A861F /* ViewController.m */,
 				88C4CAB826827216009A861F /* Main.storyboard */,
 				88C4CABB26827218009A861F /* Assets.xcassets */,
-				88C4CABD26827218009A861F /* LaunchScreen.storyboard */,
+				88C4CAE4268286B9009A861F /* TipViewController.h */,
+				88C4CAE5268286B9009A861F /* TipViewController.m */,
 				88C4CAC026827218009A861F /* Info.plist */,
 				88C4CAC126827218009A861F /* main.m */,
 			);
@@ -239,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C4CABF26827218009A861F /* LaunchScreen.storyboard in Resources */,
 				88C4CABC26827218009A861F /* Assets.xcassets in Resources */,
 				88C4CABA26827216009A861F /* Main.storyboard in Resources */,
 			);
@@ -266,9 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C4CAB726827216009A861F /* ViewController.m in Sources */,
 				88C4CAB126827216009A861F /* AppDelegate.m in Sources */,
 				88C4CAC226827218009A861F /* main.m in Sources */,
+				88C4CAE6268286B9009A861F /* TipViewController.m in Sources */,
 				88C4CAB426827216009A861F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +307,6 @@
 				88C4CAB926827216009A861F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		88C4CABD26827218009A861F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88C4CABE26827218009A861F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
