@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://im3.ezgif.com/tmp/ezgif-3-6edcafb87eb8.gif' />
+<img src='https://media.giphy.com/media/ImC9O8NUSq7iJctoRI/giphy.gif' />
 
 GIF created with [Kap](https://getkap.co/).
 
